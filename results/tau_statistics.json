@@ -1,0 +1,28 @@
+{
+  "n_replicates": 11,
+  "n_capped": 7,
+  "n_wiffle": 4,
+  "n_by_group": {
+    "capped": 7,
+    "wiffle_str": 2,
+    "wiffle_exp": 2
+  },
+  "geomean_tau_capped_s": 2890.808719476312,
+  "geomean_tau_wiffle_s": 979.5313149348237,
+  "geomean_tau_ratio_capped_over_wiffle": 2.951216235152892,
+  "welch_t_log10_tau": {
+    "t": 3.680918108474301,
+    "p": 0.005171942515978698
+  },
+  "mann_whitney_tau": {
+    "U": 28.0,
+    "p": 0.006060606060606061
+  },
+  "all_capped_c_below_1": true,
+  "capped_c_max": 0.8350312542139492,
+  "capped_c_mean": 0.7722959890440392,
+  "capped_c_sd": 0.04385619849431366,
+  "n_replicates_with_c_equal_1": 2,
+  "c_standard_error_min": 0.0018828794176251752,
+  "c_standard_error_max": 0.004744928587501122
+}

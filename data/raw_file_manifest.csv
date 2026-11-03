@@ -1,0 +1,16 @@
+date,raw_file,status,replicate,shell,n_points_raw,n_points_used
+01.22.26,CAPPED_1_formatted_output.txt,analyzed,01.22.26,Capped,728,727
+01.22.26,CAPPED_2_formatted_output.txt,analyzed,01.22.26a,Capped,728,727
+01.22.26,WIFFLE_1_formatted_output.txt,rejected: negative absorbance,,,727,726
+01.22.26,WIFFLE_2_formatted_output.txt,analyzed,01.22.26,Wiffle,727,726
+10.02.25,CAPPED_STIR_TEMP_formatted_output.txt,analyzed,10.02.25,Capped,727,726
+10.02.25,WIFFLE_STIR_TEMP_formatted_output.txt,analyzed,10.02.25,Wiffle,727,726
+11.12.25,CAPPED_10X_formatted_output.txt,analyzed,11.12.25,Capped,727,726
+11.12.25,CAPPED_2X_formatted_output.txt,analyzed,11.12.25a,Capped,727,726
+11.12.25,ICG_Only_formatted_output.txt,not analyzed: control (not a capped/wiffle shell sample),,,727,726
+11.12.25,WIFFLE_formatted_output.txt,analyzed,11.12.25,Wiffle,727,726
+12.10.25,CAPPED_1_formatted_output.txt,analyzed,12.10.25,Capped,727,726
+12.10.25,CAPPED_2_formatted_output.txt,analyzed,12.10.25a,Capped,727,726
+12.10.25,ICG_Only_2_formatted_output.txt,not analyzed: control (not a capped/wiffle shell sample),,,727,726
+12.10.25,ICG_Only_formatted_output.txt,not analyzed: control (not a capped/wiffle shell sample),,,727,726
+12.10.25,WIFFLE_2_DYE_Spiked_formatted_output.txt,analyzed,12.10.25,Wiffle,727,726
