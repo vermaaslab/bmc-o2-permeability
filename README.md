@@ -136,4 +136,8 @@ requirements.txt  environment.yml  Makefile
 ## Status
 
 The manuscript is in preparation and this repository will be updated with it.
-No license has been chosen yet.
+
+## License
+
+Released under the GNU General Public License, version 3. The full text is in
+[`LICENSE`](LICENSE).
