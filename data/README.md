@@ -76,3 +76,8 @@ them:
 python scripts/parse_raw_spectra.py --raw-dir /path/to/inputdata
 git diff --stat data/        # no change expected
 ```
+
+## License
+
+The files in this directory are licensed under CC BY 4.0; see
+[`../LICENSE-CC-BY-4.0.txt`](../LICENSE-CC-BY-4.0.txt).
