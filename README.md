@@ -76,6 +76,7 @@ All values below are read from `results/*.json`; nothing is typed by hand.
 
 * Characteristic decay time (geometric mean): capped 2891 s, wiffle 980 s (ratio 2.95); Welch t-test on log τ, p = 0.0052; Mann-Whitney, p = 0.0061.
 * Stretch exponent c: below 1 for all 7 capped replicates (mean 0.77 ± 0.04 s.d.); exactly 1 for 2 of 11 traces, both wiffle.
+* Leave-one-date-out jackknife of the capped exponent (not in the current manuscript): α = 0.325–0.525 across the 7 exclusions, versus 0.438 from the full-data multi-start refit; P ranges 80–483 nm/s (`results/jackknife_capped.json`).
 * For the single-exponential wiffle group P is bounded only from below (the band runs to the upper search limit), and its "P_eff" is just P because α = 1 by construction.
 
 ## Repository layout
@@ -117,9 +118,11 @@ requirements.txt  environment.yml  Makefile
 
 ## Reproducibility
 
-* The fits are deterministic: the multi-start grids are fixed and there is no
-  random number generation in any fit. (The small horizontal jitter of points
-  in Figures 4 and 5 uses a fixed seed.)
+* No fit uses random numbers: the multi-start grids are fixed. (The small
+  horizontal jitter of points in Figures 4 and 5 uses a fixed seed.) Re-running
+  `fit_groups.py` here reproduced the committed tables and JSON values exactly.
+  The jackknife agreed with an earlier run to within 5×10⁻⁵ in α, so expect
+  agreement to roughly that level rather than bit-for-bit for the jackknife.
 * Results were produced with Python 3.11, numpy 2.4.6, scipy 1.17.1,
   lmfit 1.3.4 and matplotlib 3.11.0 (`requirements.txt`). Other versions should
   reproduce the findings but may change the trailing digits of the ODE fits.
