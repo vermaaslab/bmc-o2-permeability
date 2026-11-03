@@ -141,10 +141,10 @@ The manuscript is in preparation and this repository will be updated with it.
 
 | Path | License | Text |
 |---|---|---|
-| `data/`, `results/` (traces, tables, figures, JSON summaries) | Creative Commons Attribution 4.0 (CC BY 4.0) | [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt) |
-| everything else (`scripts/`, `docs/`, this README, build and environment files) | GNU General Public License, version 3 | [`LICENSE`](LICENSE) |
+| `data/`, `results/` (traces, tables, figures, JSON summaries), `docs/`, and this README | Creative Commons Attribution 4.0 (CC BY 4.0) | [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt) |
+| everything else (`scripts/`, `Makefile`, `requirements.txt`, `environment.yml`, `.gitignore`) | GNU General Public License, version 3 | [`LICENSE`](LICENSE) |
 
-If you reuse the data or figures, please credit the authors of the associated
+If you reuse the data, figures or documentation, please credit the authors of the associated
 manuscript (Dwyer, Leslie, Yang, Ferlez, Beck, Vermaas and Kerfeld),
 *Construction and characterization of synthetic bacterial microcompartment
 shells containing oxygen-sensing reporters*, and cite the paper once it is

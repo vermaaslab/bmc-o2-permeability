@@ -174,3 +174,8 @@ measured $c$ of Table 1 (third row of Table 2).
 * The per-replicate $k$ and $s$ absorb some of the curvature that $\alpha$
   would otherwise explain; `scripts/constrain_ks.py` quantifies how much the
   fits degrade when $k$ and $s$ are bounded or shared.
+
+## License
+
+This document is licensed under CC BY 4.0; see
+[`../LICENSE-CC-BY-4.0.txt`](../LICENSE-CC-BY-4.0.txt).
