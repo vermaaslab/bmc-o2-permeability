@@ -17,14 +17,14 @@ If singlet oxygen is produced at a constant rate and consumes dye
 bimolecularly,
 
 ```math
-\frac{d[M]}{dt} = -k\,[M]\,[{}^{1}\mathrm{O}_2] \tag{S1}
+\frac{d[M]}{dt} = -k\,[M]\,[{}^{1}\mathrm{O}_2] \qquad (\mathrm{S1})
 ```
 
 and, with $`[{}^{1}\mathrm{O}_2]`$ constant (sample open to air, constant laser
 power),
 
 ```math
-\frac{d[M]}{dt} = -C\,[M] \quad\Rightarrow\quad [M](t) = [M]_0\,e^{-Ct} \tag{S2}
+\frac{d[M]}{dt} = -C\,[M] \quad\Rightarrow\quad [M](t) = [M]_0\,e^{-Ct} \qquad (\mathrm{S2})
 ```
 
 The prediction is a single exponential. Only 2 of the 11 traces are consistent
@@ -43,7 +43,7 @@ $`A`$ of S6):
 \begin{aligned}
 \frac{dM_i}{dt} &= -k\,M_i - P A_\mathrm{shell}\left([M_i]-[M_o]\right)\\
 \frac{dM_o}{dt} &= P A_\mathrm{shell}\left([M_i]-[M_o]\right)
-\end{aligned}\tag{S3}
+\end{aligned}\qquad (\mathrm{S3})
 ```
 
 Dividing by the compartment volumes, $`V_i`$ inside and $`V_o = s\,V_i`$ outside
@@ -51,7 +51,7 @@ Dividing by the compartment volumes, $`V_i`$ inside and $`V_o = s\,V_i`$ outside
 
 ```math
 \frac{A_\mathrm{shell}}{V_i} = \frac{4\pi r^2}{\tfrac{4}{3}\pi r^3} = \frac{3}{r}
-\approx 0.158\ \mathrm{nm^{-1}} \tag{S4}
+\approx 0.158\ \mathrm{nm^{-1}} \qquad (\mathrm{S4})
 ```
 
 gives the concentration equations that are actually integrated:
@@ -60,14 +60,14 @@ gives the concentration equations that are actually integrated:
 \begin{aligned}
 \frac{d[M_i]}{dt} &= -k\,[M_i] + \frac{3P}{19\ \mathrm{nm}}\left([M_o]-[M_i]\right)\\
 \frac{d[M_o]}{dt} &= -\frac{3P}{s\cdot 19\ \mathrm{nm}}\left([M_o]-[M_i]\right)
-\end{aligned}\tag{S5}
+\end{aligned}\qquad (\mathrm{S5})
 ```
 
 The spectrometer sees the whole cuvette, so the measured absorbance is the
 volume-weighted mean of the two concentrations,
 
 ```math
-A_{780\,\mathrm{nm}} = A\,\frac{[M_i] + s\,[M_o]}{s+1} \tag{S6}
+A_{780\,\mathrm{nm}} = A\,\frac{[M_i] + s\,[M_o]}{s+1} \qquad (\mathrm{S6})
 ```
 
 with both compartments initially at the same concentration,
@@ -81,7 +81,7 @@ To allow single-file, subdiffusive transport through the shell pores the
 permeability is made time dependent,
 
 ```math
-P_\mathrm{eff}(t) = P\,t^{\alpha-1} \tag{S7}
+P_\mathrm{eff}(t) = P\,t^{\alpha-1} \qquad (\mathrm{S7})
 ```
 
 and inserted for $`P`$ in S5. $`\alpha = 1`$ recovers constant $`P`$; $`\alpha < 1`$ means
