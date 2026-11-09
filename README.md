@@ -1,5 +1,7 @@
 # bmc-o2-permeability
 
+[![DOI](https://zenodo.org/badge/1444898684.svg)](https://doi.org/10.5281/zenodo.23933032)
+
 Analysis code and data for the manuscript *Construction and characterization of
 synthetic bacterial microcompartment shells containing oxygen-sensing
 reporters*. The analysis estimates how permeable synthetic bacterial
