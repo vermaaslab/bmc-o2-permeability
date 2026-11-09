@@ -20,15 +20,15 @@ rate reports on shell permeability.
 The analysis has three layers:
 
 1. **Model-free curve shape.** Each trace is fit on its own with a stretched
-   exponential, $A(t)=a\,e^{-bt^{c}}$. $c<1$ means the decay is slower at late
+   exponential, $`A(t)=a\,e^{-bt^{c}}`$. $`c<1`$ means the decay is slower at late
    times than a single exponential predicts. The characteristic decay time is
-   $\tau=b^{-1/c}$. (Table 1, Figure 5.)
+   $`\tau=b^{-1/c}`$. (Table 1, Figure 5.)
 2. **Mechanistic model.** A two-compartment (inside/outside the shell)
    diffusion-reaction model with a time-dependent permeability
-   $P_\mathrm{eff}(t)=P\,t^{\alpha-1}$ is fit to each shell group, giving
-   $P$ and $\alpha$ and honest uncertainty bands. (Table 2, Figure 4.)
+   $`P_\mathrm{eff}(t)=P\,t^{\alpha-1}`$ is fit to each shell group, giving
+   $`P`$ and $`\alpha`$ and honest uncertainty bands. (Table 2, Figure 4.)
 3. **Robustness checks (not discussed in the current manuscript text).** A
-   leave-one-date-out jackknife of $\alpha$, and a test of how much the
+   leave-one-date-out jackknife of $`\alpha`$, and a test of how much the
    per-replicate nuisance parameters matter.
 
 The equations are in [`docs/model.md`](docs/model.md).
@@ -52,13 +52,13 @@ running anything. All scripts can be run from any working directory.
 
 | Manuscript item | Script (in `scripts/`) | Output (in `results/`) |
 |---|---|---|
-| Table 1: per-replicate $c$ and $\tau$ | `stretched_exponential_reporter.py` | `ctautable.tex` (also `abctable.tex` with $a,b,c$; `abc_fits.json`) |
-| Quoted statistics: geometric-mean $\tau$, Welch and Mann-Whitney tests, "$c<1$ for every capped replicate" | `tau_statistics.py` | `tau_statistics.json` |
+| Table 1: per-replicate $`c`$ and $`\tau`$ | `stretched_exponential_reporter.py` | `ctautable.tex` (also `abctable.tex` with $`a,b,c`$; `abc_fits.json`) |
+| Quoted statistics: geometric-mean $`\tau`$, Welch and Mann-Whitney tests, "$`c<1`$ for every capped replicate" | `tau_statistics.py` | `tau_statistics.json` |
 | Figure 4: decay curves and decay times | `plot_decay_and_tau.py` | `decay_and_tau_by_group.png`, `.pdf` |
 | Figure 5: stretch exponent by group | `plot_stretch_exponent.py` | `stretch_exponent_by_group.png` |
 | Table 2: ODE model parameters, near-optimal bands, classical-vs-subdiffusive RSS | `fit_groups.py` | `table2_odeparams.tex`, `fit_groups_summary.json` |
-| Not in the current manuscript: leave-one-date-out jackknife of $\alpha$ (capped) | `jackknife_capped.py` | `jackknife_capped.json` |
-| Not in the current manuscript: effect of bounding or sharing the per-replicate $k$ and $s$ | `constrain_ks.py` | `constrain_ks.json` |
+| Not in the current manuscript: leave-one-date-out jackknife of $`\alpha`$ (capped) | `jackknife_capped.py` | `jackknife_capped.json` |
+| Not in the current manuscript: effect of bounding or sharing the per-replicate $`k`$ and $`s`$ | `constrain_ks.py` | `constrain_ks.json` |
 | SI Eqs. S1-S7 | (see [`docs/model.md`](docs/model.md)) | |
 
 `scripts/make_all.py` runs them in dependency order. The `.tex` tables are
@@ -105,15 +105,15 @@ requirements.txt  environment.yml  Makefile
 ## Reading the results
 
 * **What the data determine.** The decay is not a single exponential for 9 of
-  the 11 traces, and the stretched exponent $c<1$ is returned for every capped
-  replicate. In the ODE model the exponent $\alpha<1$ is robustly supported for
-  the capped and stretched-wiffle groups (the classical $\alpha=1$ fit is far
+  the 11 traces, and the stretched exponent $`c<1`$ is returned for every capped
+  replicate. In the ODE model the exponent $`\alpha<1`$ is robustly supported for
+  the capped and stretched-wiffle groups (the classical $`\alpha=1`$ fit is far
   worse; see the table above).
-* **What they do not.** $P$ and $\alpha$ trade off, so the point estimate of
-  $P$ is much better constrained than its covariance standard error suggests.
+* **What they do not.** $`P`$ and $`\alpha`$ trade off, so the point estimate of
+  $`P`$ is much better constrained than its covariance standard error suggests.
   Quote the near-optimal band (Table 2), not the standard error. The capped and
   stretched-wiffle bands overlap almost entirely, and the single-exponential
-  wiffle group yields only a lower bound on $P$. Details in
+  wiffle group yields only a lower bound on $`P`$. Details in
   [`docs/model.md`](docs/model.md), section 6.
 
 ## Reproducibility
